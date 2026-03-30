@@ -1,0 +1,8 @@
+def count_max(arr):
+    max_val = arr[0]
+    for num in arr:
+        if num > max_val:
+            max_val = num
+    return max_val
+arr=[415,523,656,978,1000,8923,1234]
+print("Maximum Value : ", count_max(arr))

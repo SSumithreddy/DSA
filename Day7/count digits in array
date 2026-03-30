@@ -1,0 +1,7 @@
+def count_digits(arr):
+    count=0
+    for num in arr:
+        count+=len(str(num))
+    return count
+arr=[1,2,3,4,5,6,7,8,9,10]
+print("Count : ", count_digits(arr))

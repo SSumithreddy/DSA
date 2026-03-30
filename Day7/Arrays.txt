@@ -1,0 +1,17 @@
+ARRAYS:
+--collection of elements with contiguous memory location 
+-- index  starts from '0' to N-1
+   ex: numbers = [10, 20, 30]
+                   0   1   2
+-- TO access an element array-name[index]
+                         number[0]
+
+--- Travers an array 
+       for num in numbers:
+               print(num)
+-- update element 
+    array-name[index] = value
+       numbers[0] = 100
+-- Add Element
+--- number .append(10)
+      array name . append (value)
