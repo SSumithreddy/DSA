@@ -1,0 +1,20 @@
+Function : block of code that performs specific tasks
+Syntax:
+        def fucntion_name(parameters):
+		#logic
+		return result
+Example:
+	def great(name):
+		return "Hello" + name
+	
+Functions help: *Avoid repetition
+		*Improve readability
+		*Improve maintainability
+]k
+Function thinking: *Instead of writing everything in one block, breaking the problem into smaller logic parts.
+
+Example: calculate area of rectangle => length=5
+					breadth=4
+					area=length*breadth
+					print(area)
+		
