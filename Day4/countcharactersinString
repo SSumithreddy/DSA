@@ -1,0 +1,10 @@
+def count_chars(text):
+    count=0
+    for char in text:
+        count += 1
+    return count
+count_chars("prudhvi")
+def main():
+    text=input("Enter name: ")
+    print("Characters count: ", count_chars(text))
+main()
