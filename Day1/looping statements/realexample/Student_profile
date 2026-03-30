@@ -1,0 +1,57 @@
+student_id = ""
+name = ""
+age = ""
+course = ""
+
+while True:
+    print("---Student Profile Menu---")
+    print("1.Add Student")
+    print("2.View Student")
+    print("3.Update Student")
+    print("4.Delete Student")
+    print("5.Exit")
+    
+    choice = int(input("Enter choice: "))
+    
+    if choice == "1":
+        Student_id = input("Enter Student ID: ")
+        name = input("Enter name: ")
+        age = input("Enter age: ")
+        course = input("Enter course: ")
+        
+        print("Student added successfully")
+        
+    elif choice == "2":
+        if student_id == "":
+            print("No Student Found")
+        else:
+            print("\nStudent Details")
+            print("ID: ", Student_id)
+            print("Name: ", name)
+            print("Age: ", age)
+            print("Course: ", course)
+            
+    elif choice == "3":
+        if student_id == "":
+            print("No Student Found to update")
+        else:
+            name = input("Enter name: ")
+            age = input("Enter age: ")
+            course = input("Enter course: ")
+            print("Student updated successfully")
+        
+    elif choice == "4":
+        if student_id == "":
+            print("No student found to delete")
+        else:
+            Student_id = ""
+            name = ""
+            age = ""
+            course = ""
+            print("Student Deleted")
+    
+    elif choice == "5":
+        print("Program Excited")
+        break
+    else:
+        print("Invalid Choice")
