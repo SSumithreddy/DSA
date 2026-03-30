@@ -1,0 +1,17 @@
+def first_occurance(arr, target):
+    low = 0
+    high = len(arr) - 1
+    result = -1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            result = mid
+            high = mid - 1  # Continue searching in the left half
+        elif target < arr[mid]:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return result
+arr = [10, 20, 20, 30]
+target = 20
+print("First occurrence of element is at index: ", first_occurance(arr, target))
