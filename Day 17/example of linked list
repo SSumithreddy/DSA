@@ -1,0 +1,45 @@
+from xml.dom import Node
+
+
+class LinkedList:
+    
+    
+    def insert_at_position(self,pos,data):
+        new_node = Node(data)
+        
+        
+        if pos == 0:
+            new_node.next = self.head
+            self.head = new_node
+            return
+        
+        temp = self.head
+        for _ in range(pos - 1):
+            if temp is None:
+                return
+            temp = temp.next
+        if temp.next:
+            temp.next = temp.next.next
+         
+    def delete_value(self, key):
+        if self.head is None:
+            return
+        
+        if self.head.data == key:
+            self.head = self.head.next
+            return
+        
+        temp = self.head
+        while temp.next is not None:
+            if temp.next.data == key:
+                temp.next = temp.next.next
+                return
+            temp = temp.next    
+            
+    def search(self, key):
+        temp = self.head
+        while temp is not None: 
+            if temp.data == key:
+                return True
+            temp = temp.next
+        return False
